@@ -263,8 +263,9 @@ p {
 @media (min-width: 640px) and (max-width: 2559px) {
   .p,
   p {
-    font-size: 33px;
-    font-size: calc(18px + (3000vw - 19200px) / 1920);
+    font-size: 30px;
+    font-size: calc(16px + (3000vw - 19200px) / 1920);
+    line-height: 43px;
   }
 }
 @media (min-width: 2560px) {
@@ -282,6 +283,7 @@ small {
   small {
     font-size: 23px;
     font-size: calc(18px + (1000vw - 6400px) / 1920);
+    line-height: 35px;
   }
 }
 @media (min-width: 2560px) {
@@ -816,7 +818,7 @@ body.is-transition {
 body:before {
   background: radial-gradient(
     circle at center,
-    rgba(0, 0, 255, 0.7) 0,
+    rgba(255, 60, 0, 0.7) 0,
     #000 115%
   );
   opacity: 0.175;
@@ -1595,7 +1597,7 @@ img {
     width: 100%;
   }
   .c-project:nth-child(2n) .c-project__title {
-    margin-left: -2.033em;
+    margin-left: -0.033em;
   }
   .c-project:nth-child(2n) .c-project__soon {
     left: -0.75vw;
