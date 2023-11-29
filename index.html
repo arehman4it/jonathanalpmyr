@@ -18,7 +18,11 @@
       content="Jonathan Alpmyr is a creative Developer &amp; Designer from Sweden"
     />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/web-logo.png" />
+
+ 
+    <script src="https://kit.fontawesome.com/1f4b816a3f.js" crossorigin="anonymous"></script>
     <link href="css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-SNWG2KYGGC"
@@ -127,6 +131,7 @@
             </a
           >
         </div>
+        <a href="" class="head-btn">Buy Now</a>
         <!-- <ul class="c-header__nav | js-header__nav">
           <li class="c-header__nav-item">
             <a class="c-header__nav-link u-link | js-text-hover" href="/"
@@ -408,7 +413,7 @@
               <div class="c-project__img">
                 <div class="plane | js-plane">
                   <img
-                    src="./images/transaction.jpg"
+                    src="./images/transaction.png"
                     data-sampler="planeTexture"
                     alt="Machinegames"
                     crossorigin="anonymous"
@@ -673,6 +678,97 @@ data-scroll-section=""
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="" data-scroll-section="">
+       
+        <div class="o-container large">
+                <div class="c-heading o-container" style="margin-bottom: 50px;">
+                        <h2 class="c-heading__title sm | js-heading__title">
+                          <span>Roadmap</span>
+                        </h2>
+                        <div class="c-heading__border o-border | js-border">
+                          <div class="o-border__sub"></div>
+                        </div>
+                      </div>
+      <!-- Swiper -->
+      <div class="swiper mySwiper ">
+        <div class="swiper-wrapper">
+      
+          <div class="swiper-slide">
+        <h4>Q1:</h4> 
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident reiciendis reprehenderit culpa mollitia explicabo quod sint deleniti facilis facere itaque, voluptatibus asperiores laborum voluptatem velit fuga quibusdam consequuntur illo? Nobis!</p>
+        </div>
+        <div class="swiper-slide">
+                <h4>Q2:</h4> 
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident reiciendis reprehenderit culpa mollitia explicabo quod sint deleniti facilis facere itaque, voluptatibus asperiores laborum voluptatem velit fuga quibusdam consequuntur illo? Nobis!</p>
+                </div>
+                <div class="swiper-slide">
+                        <h4>Q3:</h4> 
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident reiciendis reprehenderit culpa mollitia explicabo quod sint deleniti facilis facere itaque, voluptatibus asperiores laborum voluptatem velit fuga quibusdam consequuntur illo? Nobis!</p>
+                        </div>
+                        <div class="swiper-slide">
+                                <h4>Q4:</h4> 
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident reiciendis reprehenderit culpa mollitia explicabo quod sint deleniti facilis facere itaque, voluptatibus asperiores laborum voluptatem velit fuga quibusdam consequuntur illo? Nobis!</p>
+                                </div>
+                                <div class="swiper-slide">
+                                        <h4>Q5:</h4> 
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident reiciendis reprehenderit culpa mollitia explicabo quod sint deleniti facilis facere itaque, voluptatibus asperiores laborum voluptatem velit fuga quibusdam consequuntur illo? Nobis!</p>
+                                        </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-scrollbar"></div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+      </div>
+        </div>
+       
+        </section> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <footer class="c-footer  | js-footer" data-scroll-section="">
           <div class="c-footer__wrap o-container">
             <div class="c-heading__border o-border | js-border">
@@ -689,17 +785,17 @@ data-scroll-section=""
                   class="c-footer__link u-link"
                   href="mailto:jonathan@madebyritual.com"
                   target="_blank"
-                  ><span>Email, </span></a
+                  ><span><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> </span></a
                 ><a
                   class="c-footer__link u-link"
                   href="https://twitter.com/jonathanalpmyr"
                   target="_blank"
-                  ><span>Twitter, </span></a
+                  ><span><i class="fa-brands fa-twitter" style="color: #ffffff;"></i> </span></a
                 ><a
                   class="c-footer__link u-link"
                   href="https://www.linkedin.com/in/jonathan-alpmyr-472b3579"
                   target="_blank"
-                  ><span>Linkedin</span></a
+                  ><span><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></span></a
                 >
               </div>
               <button class="c-footer__scroll-top u-link | js-scroll-top">
@@ -711,8 +807,33 @@ data-scroll-section=""
         <div class="o-mask | js-mask"></div>
       </div>
     </main>
-    <!-- <div id="canvas"></div> -->
-    <!-- <div class="o-transition | js-transition"></div> -->
-    <script src="js/main.js"></script>
+
+
+    <div id="canvas"></div>
+    <div class="o-transition | js-transition"></div>
+    
+   
+    
+    <script src="./js/main.js"></script>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+      },
+    });
+  </script>
+  
   </body>
 </html>
