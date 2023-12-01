@@ -864,7 +864,7 @@ body:before {
     rgba(255, 60, 0, 0.7) 0,
     #000 115%
   );
-  opacity: 0.175;
+  opacity: 0.375;
   content: "";
   display: block;
   height: 100vh;
